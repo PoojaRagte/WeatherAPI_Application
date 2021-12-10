@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Weather Application";
+    Layout = "_Layout";
+}
+
+<h1 class="display-4">Welcome to the weather Application</h1>
+<br />
+
+<div class="">
+    <div class="search">
+        <input type="text" class="search-bar">
+        <button class="searchbutton" onclick="displayWeather()">Search</button>
+    </div>
+    <br />
+
+    <div class="weather" style="display:none" id="display">
+        <div class="city-information">
+            <h2>City information</h2>
+            <div class="name">London</div>
+            <div class="region">City of London, Greater London</div>
+            <div class="country">United Kingdom</div>
+            <div class="latitude">51.52</div>
+            <div class="longitude">-0.11</div>
+            <div class="timezone">1639158457</div>
+            <div class="currenttime">2021-12-10 17:47</div>
+        </div>
+        <br />
+        <div class="weather-forecast">
+            <h2>Weather Forecast</h2>
+            <div class="hour"></div>
+            <div class="description"></div>            
+        </div>
+    </div>
+</div>
